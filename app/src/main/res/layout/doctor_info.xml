@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="350dp" android:layout_gravity="center"
+    android:layout_height="match_parent"  android:layout_marginBottom="15dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_component"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/customborder"
+        >
+
+        <ImageView
+            android:id="@+id/doctor_image"
+            android:layout_width="92dp"
+            android:layout_height="64dp"
+            android:src="@drawable/profile" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/general_info_component">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctor_name"
+                android:text="Lorem Ipsum"
+                android:textColor="@color/main_blue"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctor_specialite"
+                android:text="Specialite"
+                android:textColor="#255795"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctor_address"
+                android:text="N 5, Rue 305, Quartier lorem"
+                android:textColor="#255795"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_component"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:background="@drawable/customborder2"
+        android:paddingBottom="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prochaine disponibilite :"
+            android:textSize="12sp"
+            android:textColor="#808080"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vendredi 07 Decembre 2020"
+            android:textColor="#255795"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>
